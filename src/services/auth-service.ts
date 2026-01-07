@@ -1,4 +1,4 @@
-import { showErrorToast, showSuccessToast } from "@/lib/toast.utils";
+import { showErrorToast, showInfoToast, showSuccessToast } from "@/lib/toast.utils";
 import { clearLocalStorage, setTokenToLocalStorage } from "@/utils.ts/localstorage-utils";
 
 const validEmail = import.meta.env.VITE_VALID_EMAIL;
@@ -17,11 +17,8 @@ export const loginFunction = async (email: string, password: string) => {
         return validToken;
     } else {
         showErrorToast(`
-            Invalid email or password.
-            Please use:
-            Email: ${validEmail}
-            Password: ${validPassword}
-        `);
+            Invalid email or password.`);
+        showInfoToast(`The valid credentials are listed in the repository's README.md.`)
         throw new Error("Invalid email or password");
 
     }
