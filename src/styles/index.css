@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    color: #1A1A1E;
+    box-sizing: border-box;
+}
