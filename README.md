@@ -13,6 +13,7 @@ provides a mocked login and editable profile for the logged-in user.
 
 **Live / Preview**
 - Development server: run `npm install` then `npm run dev`.
+- Deployed app: https://quantum-hr-task-vercel-v6ny.vercel.app/
 
 ---
 
